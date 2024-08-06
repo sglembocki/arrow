@@ -162,7 +162,7 @@ DataFrame output:
 
 .. ipython:: python
 
-   with pa.ipc.open_file(buf) as reader:
+   with pa.ipc.open_stream(buf) as reader:
       df = reader.read_pandas()
 
    df[:5]
